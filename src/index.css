@@ -1,0 +1,32 @@
+/* src/index.css */
+/* Global resets & Mavericks CSS variables */
+:root {
+  --mavs-primary:  #00538C;
+  --mavs-secondary: #000000;
+  --mavs-accent:   #007AFF;
+  --mavs-white:    #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--mavs-secondary);
+  color: var(--mavs-white);
+  line-height: 1.5;
+}
+
+/* Links use accent */
+a {
+  color: var(--mavs-accent);
+  text-decoration: none;
+}
+
+/* Utility spacing */
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.p-2  { padding: 16px; }

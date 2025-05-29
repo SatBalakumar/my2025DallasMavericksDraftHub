@@ -1,0 +1,136 @@
+/* src/App.css */
+:root {
+  --mavs-blue: #0064b1;
+  --mavs-navy: #00285e;
+  --mavs-silver: #b8c4ca;
+  --mavs-white: #ffffff;
+  --mavs-light-bg: #f5f7fa;
+  --mavs-light-gray: #e5e9ef;
+}
+
+body {
+  background-color: var(--mavs-light-bg);
+  color: var(--mavs-navy);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+/* Top‐level container */
+.App {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 16px;
+  }
+}
+
+/* Override MUI Paper backgrounds for light theme */
+.MuiPaper-root {
+  background-color: var(--mavs-white) !important;
+  color: var(--mavs-navy) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Primary contained Buttons get Mavs blue */
+.MuiButton-containedPrimary {
+  background-color: var(--mavs-blue) !important;
+  color: var(--mavs-white) !important;
+}
+
+/* Secondary buttons */
+.MuiButton-outlined {
+  border-color: var(--mavs-blue) !important;
+  color: var(--mavs-blue) !important;
+}
+
+/* Table styles */
+.MuiTableCell-head {
+  font-weight: bold !important;
+  background-color: var(--mavs-blue) !important;
+  color: var(--mavs-white) !important;
+}
+
+.MuiTableRow-root:nth-of-type(odd) {
+  background-color: var(--mavs-light-bg);
+}
+
+/* Player card styles */
+.player-card {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border: 1px solid var(--mavs-light-gray);
+}
+
+.player-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 100, 177, 0.15) !important;
+}
+
+/* Stat visualization */
+.stat-chart {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Logo styles */
+.logo {
+  height: 40px;
+  margin-right: 16px;
+}
+
+/* Search bar styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+/* Tabs styling */
+.MuiTab-root {
+  color: var(--mavs-navy) !important;
+}
+
+.MuiTab-root.Mui-selected {
+  color: var(--mavs-blue) !important;
+}
+
+.MuiTabs-indicator {
+  background-color: var(--mavs-blue) !important;
+}
+
+/* Chip styling */
+.MuiChip-colorPrimary {
+  background-color: var(--mavs-blue) !important;
+}
+
+.MuiChip-outlinedPrimary {
+  color: var(--mavs-blue) !important;
+  border-color: var(--mavs-blue) !important;
+}
+
+/* Avatar styling */
+.MuiAvatar-colorDefault {
+  background-color: var(--mavs-blue) !important;
+}
+
+/* Typography improvements */
+.MuiTypography-root {
+  color: var(--mavs-navy);
+}
+
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 40, 94, 0.7) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .responsive-table {
+    overflow-x: auto;
+  }
+
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
