@@ -25,7 +25,7 @@ A fully frontend React application built with Vite and Material UI, serving as 
 * **Player Profiles** (`PlayerProfile.jsx`): Detailed prospect pages showing biographical info, measurements, aggregated scout feedback, and on-the-fly scouting report form.
 * **Scouting Reports** (`PlayerProfile.jsx` + form): Add custom notes saved to React state; no backend persistence required.
 * **Send Draft Pick** (`SendDraftPick.jsx`): UI to record the Mavericks’ draft selections, writing to `data/mavericks_draft_picks.json` in-app state.
-* **Responsive Design**: Uses Material UI Grid and breakpoints to support laptop, tablet, and mobile layouts.
+* **Responsive Design**: Uses Material UI Grid and breakpoints to support laptop and tablet layouts. Still working on mobile layouts.
 * **Branding & Assets**: Team logos and background images in the `public` folder for a polished look.
 
 ---
@@ -137,19 +137,15 @@ mavs-draft-hub/
 
 * **Backend Integration**: Persist login sessions, scouting reports, and pick records to a real database.
 * **Trade Proposal Module**: UI for suggesting player trades and visualizing team impact.
+* **Trade Tracker Module**: An actual backend to frontend communication could allow a trade tracker option.
+* **News Module**: Backend to frontend communication could allow for notifications to be sent to the webpage when there is important draft news.
+* **Watch Live Module**: Create a new tab to open to watch the 2025 NBA draft live.
 * **Salary Cap & Stat Projections**: Analytical engine to project cap hits and on-court metrics by pick.
 * **Advanced Filtering & Search**: Filter prospects by position, school, physical attributes, etc.
 * **Chart Visualizations**: Integrate charts (e.g., Recharts) for historical and comparative stats.
 * **Role-Based Access**: Restrict certain views/actions (e.g., only GMs can finalize picks).
-* **Mobile Optimization**: Improve touch interactions and mobile layouts.
+* **Mobile Optimization**: Improve touch interactions and mobile layouts (some pages might not format correctly on portrait mode on mobile devices.
 * **Testing Suite**: Add unit and integration tests with Jest and React Testing Library.
-
----
-
-## Contributing
-
-Contributions welcome! Please fork, add a descriptive issue or PR, and include tests for new functionality.
-
 ---
 
 Happy drafting! 🎉
